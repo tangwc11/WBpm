@@ -97,7 +97,7 @@ activiti7中关键的库表结构：
 
 整个运行示意图如下：
 
-<img src="imgs/activiti.drawio.svg" alt="activiti.drawio" style="zoom:67%;" width="70%" />
+<img src="imgs/activiti.drawio.svg" alt="activiti.drawio" style="zoom:67%;" width="85%" />
 
 
 
