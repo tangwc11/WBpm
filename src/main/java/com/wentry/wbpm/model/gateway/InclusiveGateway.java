@@ -5,7 +5,6 @@ import com.wentry.wbpm.core.base.BaseWBpmNode;
 import com.wentry.wbpm.core.filter.Filters;
 import com.wentry.wbpm.core.base.WBpmNode;
 import com.wentry.wbpm.api.ProcessInstanceContext;
-import com.wentry.wbpm.model.task.UserTaskNode;
 
 
 import java.util.ArrayList;
@@ -28,7 +27,7 @@ public class InclusiveGateway extends BaseWBpmNode {
     private List<GatewayOutTo> outTos = new ArrayList<>();
 
     public InclusiveGateway(String name) {
-        super(name, Filters.defaultFilters);
+        super(name, Filters.DEFAULT_FILTERS);
     }
 
 

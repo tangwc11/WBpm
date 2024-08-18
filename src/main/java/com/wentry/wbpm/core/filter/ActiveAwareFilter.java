@@ -11,7 +11,7 @@ import com.wentry.wbpm.core.base.WBpmNode;
 
 public class ActiveAwareFilter extends FilterAdapter {
 
-    public static final ActiveAwareFilter instance = new ActiveAwareFilter();
+    public static final ActiveAwareFilter INSTANCE = new ActiveAwareFilter();
 
     @Override
     public void beforeFlowInto(ProcessInstanceContext context, WBpmNode pre, WBpmNode intoNode) {

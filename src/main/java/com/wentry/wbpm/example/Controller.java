@@ -1,7 +1,6 @@
 package com.wentry.wbpm.example;
 
 import com.google.common.collect.Lists;
-import com.sun.xml.internal.ws.policy.PolicyMapUtil;
 import com.wentry.wbpm.api.ProcessDefinition;
 import com.wentry.wbpm.api.ProcessEngine;
 import com.wentry.wbpm.api.ProcessInstance;
@@ -13,8 +12,7 @@ import com.wentry.wbpm.model.event.EndNode;
 import com.wentry.wbpm.model.event.StartNode;
 import com.wentry.wbpm.model.gateway.InclusiveGateway;
 import com.wentry.wbpm.model.task.UserTaskNode;
-import com.wentry.wbpm.utils.JsonUtils;
-import org.apache.commons.collections4.CollectionUtils;
+import com.wentry.wbpm.utils.json.JsonUtils;
 import org.apache.commons.collections4.MapUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

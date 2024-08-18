@@ -4,11 +4,9 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.wentry.wbpm.core.base.BaseWBpmNode;
 import com.wentry.wbpm.core.BpmFirer;
 import com.wentry.wbpm.core.filter.Filters;
-import com.wentry.wbpm.core.filter.NodeFilter;
 import com.wentry.wbpm.core.base.WBpmNode;
 import com.wentry.wbpm.api.ProcessInstanceContext;
 import com.wentry.wbpm.core.listener.UserTaskListener;
-import com.wentry.wbpm.model.event.StartNode;
 import com.wentry.wbpm.model.gateway.ParallelGateway;
 
 import org.apache.commons.lang3.StringUtils;
@@ -30,7 +28,7 @@ public class UserTaskNode extends BaseWBpmNode {
     private List<UserTaskListener> userTaskListeners = new ArrayList<>();
 
     public UserTaskNode(String name) {
-        super(name, Filters.defaultFilters);
+        super(name, Filters.DEFAULT_FILTERS);
     }
 
     public <T extends WBpmNode> UserTaskNode next(T next) {

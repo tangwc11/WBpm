@@ -22,7 +22,7 @@ public class ExclusiveGateway extends AutoFinishedWBpmNode {
     private List<GatewayOutTo> outTos = new ArrayList<>();
 
     public ExclusiveGateway(String name) {
-        super(name,Filters.defaultFilters);
+        super(name,Filters.DEFAULT_FILTERS);
     }
 
     public UserTaskNode outTo(Supplier<Boolean> condition, UserTaskNode userTaskNode) {

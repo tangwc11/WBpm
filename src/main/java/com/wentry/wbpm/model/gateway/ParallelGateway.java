@@ -2,7 +2,6 @@ package com.wentry.wbpm.model.gateway;
 
 import com.wentry.wbpm.core.base.AutoFinishedWBpmNode;
 import com.wentry.wbpm.core.filter.Filters;
-import com.wentry.wbpm.core.filter.NodeFilter;
 import com.wentry.wbpm.core.base.WBpmNode;
 import com.wentry.wbpm.api.ProcessInstanceContext;
 import com.wentry.wbpm.model.task.UserTaskNode;
@@ -27,7 +26,7 @@ public class ParallelGateway extends AutoFinishedWBpmNode {
     private List<GatewayOutTo> outTos = new ArrayList<>();
 
     public ParallelGateway(String name) {
-        super(name,Filters.defaultFilters);
+        super(name,Filters.DEFAULT_FILTERS);
     }
 
     public UserTaskNode outTo(Supplier<Boolean> condition, UserTaskNode userTaskNode) {

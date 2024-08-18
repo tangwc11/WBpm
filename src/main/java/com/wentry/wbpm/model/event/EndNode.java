@@ -14,7 +14,7 @@ import com.wentry.wbpm.core.filter.Filters;
 public class EndNode extends AutoFinishedWBpmNode {
 
     public EndNode(String name) {
-        super(name,Filters.defaultFilters);
+        super(name,Filters.DEFAULT_FILTERS);
     }
 
     @Override

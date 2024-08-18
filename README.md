@@ -235,779 +235,101 @@ wbpm核心概念：
 执行日志:>>>>>>>>>流程进入：{
   "id" : "node_3",
   "name" : "起始节点",
-  "complete" : false,
-  "next" : {
-    "id" : "node_4",
-    "name" : "提交申请",
-    "complete" : false,
-    "assignee" : null,
-    "next" : {
-      "id" : "node_5",
-      "name" : "组长审批",
-      "complete" : false,
-      "assignee" : null,
-      "next" : {
-        "id" : "node_6",
-        "name" : "中继节点：同时分发给大组长和财务审批",
-        "complete" : false,
-        "outTos" : [ {
-          "condition" : { },
-          "userTaskNode" : {
-            "id" : "node_7",
-            "name" : "大组长审批",
-            "complete" : false,
-            "assignee" : "lisi",
-            "next" : {
-              "id" : "node_1",
-              "name" : "中继节点：等待大组长和财务审批完毕",
-              "complete" : false,
-              "outTos" : [ {
-                "condition" : { },
-                "userTaskNode" : {
-                  "id" : "node_2",
-                  "name" : "结束节点",
-                  "complete" : false
-                }
-              } ]
-            }
-          }
-        }, {
-          "condition" : { },
-          "userTaskNode" : {
-            "id" : "node_8",
-            "name" : "财务审批",
-            "complete" : false,
-            "assignee" : "rose",
-            "next" : {
-              "id" : "node_1",
-              "name" : "中继节点：等待大组长和财务审批完毕",
-              "complete" : false,
-              "outTos" : [ {
-                "condition" : { },
-                "userTaskNode" : {
-                  "id" : "node_2",
-                  "name" : "结束节点",
-                  "complete" : false
-                }
-              } ]
-            }
-          }
-        } ]
-      }
-    }
-  }
-}, 上一个节点：null
+  "complete" : false
+} , 上一个节点：null , 当前时间： 2024-08-18 14:39:17
 执行日志:>>>>>>>>>流程流出：{
   "id" : "node_3",
   "name" : "起始节点",
-  "complete" : true,
-  "next" : {
-    "id" : "node_4",
-    "name" : "提交申请",
-    "complete" : false,
-    "assignee" : null,
-    "next" : {
-      "id" : "node_5",
-      "name" : "组长审批",
-      "complete" : false,
-      "assignee" : null,
-      "next" : {
-        "id" : "node_6",
-        "name" : "中继节点：同时分发给大组长和财务审批",
-        "complete" : false,
-        "outTos" : [ {
-          "condition" : { },
-          "userTaskNode" : {
-            "id" : "node_7",
-            "name" : "大组长审批",
-            "complete" : false,
-            "assignee" : "lisi",
-            "next" : {
-              "id" : "node_1",
-              "name" : "中继节点：等待大组长和财务审批完毕",
-              "complete" : false,
-              "outTos" : [ {
-                "condition" : { },
-                "userTaskNode" : {
-                  "id" : "node_2",
-                  "name" : "结束节点",
-                  "complete" : false
-                }
-              } ]
-            }
-          }
-        }, {
-          "condition" : { },
-          "userTaskNode" : {
-            "id" : "node_8",
-            "name" : "财务审批",
-            "complete" : false,
-            "assignee" : "rose",
-            "next" : {
-              "id" : "node_1",
-              "name" : "中继节点：等待大组长和财务审批完毕",
-              "complete" : false,
-              "outTos" : [ {
-                "condition" : { },
-                "userTaskNode" : {
-                  "id" : "node_2",
-                  "name" : "结束节点",
-                  "complete" : false
-                }
-              } ]
-            }
-          }
-        } ]
-      }
-    }
-  }
-}
+  "complete" : true
+} , 当前时间： 2024-08-18 14:39:17
 执行日志:>>>>>>>>>流程进入：{
   "id" : "node_4",
   "name" : "提交申请",
   "complete" : false,
-  "assignee" : null,
-  "next" : {
-    "id" : "node_5",
-    "name" : "组长审批",
-    "complete" : false,
-    "assignee" : null,
-    "next" : {
-      "id" : "node_6",
-      "name" : "中继节点：同时分发给大组长和财务审批",
-      "complete" : false,
-      "outTos" : [ {
-        "condition" : { },
-        "userTaskNode" : {
-          "id" : "node_7",
-          "name" : "大组长审批",
-          "complete" : false,
-          "assignee" : "lisi",
-          "next" : {
-            "id" : "node_1",
-            "name" : "中继节点：等待大组长和财务审批完毕",
-            "complete" : false,
-            "outTos" : [ {
-              "condition" : { },
-              "userTaskNode" : {
-                "id" : "node_2",
-                "name" : "结束节点",
-                "complete" : false
-              }
-            } ]
-          }
-        }
-      }, {
-        "condition" : { },
-        "userTaskNode" : {
-          "id" : "node_8",
-          "name" : "财务审批",
-          "complete" : false,
-          "assignee" : "rose",
-          "next" : {
-            "id" : "node_1",
-            "name" : "中继节点：等待大组长和财务审批完毕",
-            "complete" : false,
-            "outTos" : [ {
-              "condition" : { },
-              "userTaskNode" : {
-                "id" : "node_2",
-                "name" : "结束节点",
-                "complete" : false
-              }
-            } ]
-          }
-        }
-      } ]
-    }
-  }
-}, 上一个节点：{
+  "assignee" : null
+} , 上一个节点：{
   "id" : "node_3",
   "name" : "起始节点",
-  "complete" : true,
-  "next" : {
-    "id" : "node_4",
-    "name" : "提交申请",
-    "complete" : false,
-    "assignee" : null,
-    "next" : {
-      "id" : "node_5",
-      "name" : "组长审批",
-      "complete" : false,
-      "assignee" : null,
-      "next" : {
-        "id" : "node_6",
-        "name" : "中继节点：同时分发给大组长和财务审批",
-        "complete" : false,
-        "outTos" : [ {
-          "condition" : { },
-          "userTaskNode" : {
-            "id" : "node_7",
-            "name" : "大组长审批",
-            "complete" : false,
-            "assignee" : "lisi",
-            "next" : {
-              "id" : "node_1",
-              "name" : "中继节点：等待大组长和财务审批完毕",
-              "complete" : false,
-              "outTos" : [ {
-                "condition" : { },
-                "userTaskNode" : {
-                  "id" : "node_2",
-                  "name" : "结束节点",
-                  "complete" : false
-                }
-              } ]
-            }
-          }
-        }, {
-          "condition" : { },
-          "userTaskNode" : {
-            "id" : "node_8",
-            "name" : "财务审批",
-            "complete" : false,
-            "assignee" : "rose",
-            "next" : {
-              "id" : "node_1",
-              "name" : "中继节点：等待大组长和财务审批完毕",
-              "complete" : false,
-              "outTos" : [ {
-                "condition" : { },
-                "userTaskNode" : {
-                  "id" : "node_2",
-                  "name" : "结束节点",
-                  "complete" : false
-                }
-              } ]
-            }
-          }
-        } ]
-      }
-    }
-  }
-}
+  "complete" : true
+} , 当前时间： 2024-08-18 14:39:17
 执行日志:>>>>>>>>>流程流出：{
   "id" : "node_4",
   "name" : "提交申请",
   "complete" : true,
-  "assignee" : "tangwc",
-  "next" : {
-    "id" : "node_5",
-    "name" : "组长审批",
-    "complete" : false,
-    "assignee" : null,
-    "next" : {
-      "id" : "node_6",
-      "name" : "中继节点：同时分发给大组长和财务审批",
-      "complete" : false,
-      "outTos" : [ {
-        "condition" : { },
-        "userTaskNode" : {
-          "id" : "node_7",
-          "name" : "大组长审批",
-          "complete" : false,
-          "assignee" : "lisi",
-          "next" : {
-            "id" : "node_1",
-            "name" : "中继节点：等待大组长和财务审批完毕",
-            "complete" : false,
-            "outTos" : [ {
-              "condition" : { },
-              "userTaskNode" : {
-                "id" : "node_2",
-                "name" : "结束节点",
-                "complete" : false
-              }
-            } ]
-          }
-        }
-      }, {
-        "condition" : { },
-        "userTaskNode" : {
-          "id" : "node_8",
-          "name" : "财务审批",
-          "complete" : false,
-          "assignee" : "rose",
-          "next" : {
-            "id" : "node_1",
-            "name" : "中继节点：等待大组长和财务审批完毕",
-            "complete" : false,
-            "outTos" : [ {
-              "condition" : { },
-              "userTaskNode" : {
-                "id" : "node_2",
-                "name" : "结束节点",
-                "complete" : false
-              }
-            } ]
-          }
-        }
-      } ]
-    }
-  }
-}
+  "assignee" : "tangwc"
+} , 当前时间： 2024-08-18 14:39:48
 执行日志:>>>>>>>>>流程进入：{
   "id" : "node_5",
   "name" : "组长审批",
   "complete" : false,
-  "assignee" : null,
-  "next" : {
-    "id" : "node_6",
-    "name" : "中继节点：同时分发给大组长和财务审批",
-    "complete" : false,
-    "outTos" : [ {
-      "condition" : { },
-      "userTaskNode" : {
-        "id" : "node_7",
-        "name" : "大组长审批",
-        "complete" : false,
-        "assignee" : "lisi",
-        "next" : {
-          "id" : "node_1",
-          "name" : "中继节点：等待大组长和财务审批完毕",
-          "complete" : false,
-          "outTos" : [ {
-            "condition" : { },
-            "userTaskNode" : {
-              "id" : "node_2",
-              "name" : "结束节点",
-              "complete" : false
-            }
-          } ]
-        }
-      }
-    }, {
-      "condition" : { },
-      "userTaskNode" : {
-        "id" : "node_8",
-        "name" : "财务审批",
-        "complete" : false,
-        "assignee" : "rose",
-        "next" : {
-          "id" : "node_1",
-          "name" : "中继节点：等待大组长和财务审批完毕",
-          "complete" : false,
-          "outTos" : [ {
-            "condition" : { },
-            "userTaskNode" : {
-              "id" : "node_2",
-              "name" : "结束节点",
-              "complete" : false
-            }
-          } ]
-        }
-      }
-    } ]
-  }
-}, 上一个节点：{
+  "assignee" : null
+} , 上一个节点：{
   "id" : "node_4",
   "name" : "提交申请",
   "complete" : true,
-  "assignee" : "tangwc",
-  "next" : {
-    "id" : "node_5",
-    "name" : "组长审批",
-    "complete" : false,
-    "assignee" : null,
-    "next" : {
-      "id" : "node_6",
-      "name" : "中继节点：同时分发给大组长和财务审批",
-      "complete" : false,
-      "outTos" : [ {
-        "condition" : { },
-        "userTaskNode" : {
-          "id" : "node_7",
-          "name" : "大组长审批",
-          "complete" : false,
-          "assignee" : "lisi",
-          "next" : {
-            "id" : "node_1",
-            "name" : "中继节点：等待大组长和财务审批完毕",
-            "complete" : false,
-            "outTos" : [ {
-              "condition" : { },
-              "userTaskNode" : {
-                "id" : "node_2",
-                "name" : "结束节点",
-                "complete" : false
-              }
-            } ]
-          }
-        }
-      }, {
-        "condition" : { },
-        "userTaskNode" : {
-          "id" : "node_8",
-          "name" : "财务审批",
-          "complete" : false,
-          "assignee" : "rose",
-          "next" : {
-            "id" : "node_1",
-            "name" : "中继节点：等待大组长和财务审批完毕",
-            "complete" : false,
-            "outTos" : [ {
-              "condition" : { },
-              "userTaskNode" : {
-                "id" : "node_2",
-                "name" : "结束节点",
-                "complete" : false
-              }
-            } ]
-          }
-        }
-      } ]
-    }
-  }
-}
+  "assignee" : "tangwc"
+} , 当前时间： 2024-08-18 14:39:48
 执行日志:>>>>>>>>>流程流出：{
   "id" : "node_5",
   "name" : "组长审批",
   "complete" : true,
-  "assignee" : "zhangsan",
-  "next" : {
-    "id" : "node_6",
-    "name" : "中继节点：同时分发给大组长和财务审批",
-    "complete" : false,
-    "outTos" : [ {
-      "condition" : { },
-      "userTaskNode" : {
-        "id" : "node_7",
-        "name" : "大组长审批",
-        "complete" : false,
-        "assignee" : "lisi",
-        "next" : {
-          "id" : "node_1",
-          "name" : "中继节点：等待大组长和财务审批完毕",
-          "complete" : false,
-          "outTos" : [ {
-            "condition" : { },
-            "userTaskNode" : {
-              "id" : "node_2",
-              "name" : "结束节点",
-              "complete" : false
-            }
-          } ]
-        }
-      }
-    }, {
-      "condition" : { },
-      "userTaskNode" : {
-        "id" : "node_8",
-        "name" : "财务审批",
-        "complete" : false,
-        "assignee" : "rose",
-        "next" : {
-          "id" : "node_1",
-          "name" : "中继节点：等待大组长和财务审批完毕",
-          "complete" : false,
-          "outTos" : [ {
-            "condition" : { },
-            "userTaskNode" : {
-              "id" : "node_2",
-              "name" : "结束节点",
-              "complete" : false
-            }
-          } ]
-        }
-      }
-    } ]
-  }
-}
+  "assignee" : "zhangsan"
+} , 当前时间： 2024-08-18 14:39:55
 执行日志:>>>>>>>>>流程进入：{
   "id" : "node_6",
   "name" : "中继节点：同时分发给大组长和财务审批",
-  "complete" : false,
-  "outTos" : [ {
-    "condition" : { },
-    "userTaskNode" : {
-      "id" : "node_7",
-      "name" : "大组长审批",
-      "complete" : false,
-      "assignee" : "lisi",
-      "next" : {
-        "id" : "node_1",
-        "name" : "中继节点：等待大组长和财务审批完毕",
-        "complete" : false,
-        "outTos" : [ {
-          "condition" : { },
-          "userTaskNode" : {
-            "id" : "node_2",
-            "name" : "结束节点",
-            "complete" : false
-          }
-        } ]
-      }
-    }
-  }, {
-    "condition" : { },
-    "userTaskNode" : {
-      "id" : "node_8",
-      "name" : "财务审批",
-      "complete" : false,
-      "assignee" : "rose",
-      "next" : {
-        "id" : "node_1",
-        "name" : "中继节点：等待大组长和财务审批完毕",
-        "complete" : false,
-        "outTos" : [ {
-          "condition" : { },
-          "userTaskNode" : {
-            "id" : "node_2",
-            "name" : "结束节点",
-            "complete" : false
-          }
-        } ]
-      }
-    }
-  } ]
-}, 上一个节点：{
+  "complete" : false
+} , 上一个节点：{
   "id" : "node_5",
   "name" : "组长审批",
   "complete" : true,
-  "assignee" : "zhangsan",
-  "next" : {
-    "id" : "node_6",
-    "name" : "中继节点：同时分发给大组长和财务审批",
-    "complete" : false,
-    "outTos" : [ {
-      "condition" : { },
-      "userTaskNode" : {
-        "id" : "node_7",
-        "name" : "大组长审批",
-        "complete" : false,
-        "assignee" : "lisi",
-        "next" : {
-          "id" : "node_1",
-          "name" : "中继节点：等待大组长和财务审批完毕",
-          "complete" : false,
-          "outTos" : [ {
-            "condition" : { },
-            "userTaskNode" : {
-              "id" : "node_2",
-              "name" : "结束节点",
-              "complete" : false
-            }
-          } ]
-        }
-      }
-    }, {
-      "condition" : { },
-      "userTaskNode" : {
-        "id" : "node_8",
-        "name" : "财务审批",
-        "complete" : false,
-        "assignee" : "rose",
-        "next" : {
-          "id" : "node_1",
-          "name" : "中继节点：等待大组长和财务审批完毕",
-          "complete" : false,
-          "outTos" : [ {
-            "condition" : { },
-            "userTaskNode" : {
-              "id" : "node_2",
-              "name" : "结束节点",
-              "complete" : false
-            }
-          } ]
-        }
-      }
-    } ]
-  }
-}
+  "assignee" : "zhangsan"
+} , 当前时间： 2024-08-18 14:39:55
 执行日志:>>>>>>>>>流程流出：{
   "id" : "node_6",
   "name" : "中继节点：同时分发给大组长和财务审批",
-  "complete" : true,
-  "outTos" : [ {
-    "condition" : { },
-    "userTaskNode" : {
-      "id" : "node_7",
-      "name" : "大组长审批",
-      "complete" : false,
-      "assignee" : "lisi",
-      "next" : {
-        "id" : "node_1",
-        "name" : "中继节点：等待大组长和财务审批完毕",
-        "complete" : false,
-        "outTos" : [ {
-          "condition" : { },
-          "userTaskNode" : {
-            "id" : "node_2",
-            "name" : "结束节点",
-            "complete" : false
-          }
-        } ]
-      }
-    }
-  }, {
-    "condition" : { },
-    "userTaskNode" : {
-      "id" : "node_8",
-      "name" : "财务审批",
-      "complete" : false,
-      "assignee" : "rose",
-      "next" : {
-        "id" : "node_1",
-        "name" : "中继节点：等待大组长和财务审批完毕",
-        "complete" : false,
-        "outTos" : [ {
-          "condition" : { },
-          "userTaskNode" : {
-            "id" : "node_2",
-            "name" : "结束节点",
-            "complete" : false
-          }
-        } ]
-      }
-    }
-  } ]
-}
+  "complete" : true
+} , 当前时间： 2024-08-18 14:39:55
 执行日志:>>>>>>>>>流程进入：{
   "id" : "node_8",
   "name" : "财务审批",
   "complete" : false,
-  "assignee" : "rose",
-  "next" : {
-    "id" : "node_1",
-    "name" : "中继节点：等待大组长和财务审批完毕",
-    "complete" : false,
-    "outTos" : [ {
-      "condition" : { },
-      "userTaskNode" : {
-        "id" : "node_2",
-        "name" : "结束节点",
-        "complete" : false
-      }
-    } ]
-  }
-}, 上一个节点：{
+  "assignee" : "rose"
+} , 上一个节点：{
   "id" : "node_6",
   "name" : "中继节点：同时分发给大组长和财务审批",
-  "complete" : true,
-  "outTos" : [ {
-    "condition" : { },
-    "userTaskNode" : {
-      "id" : "node_7",
-      "name" : "大组长审批",
-      "complete" : false,
-      "assignee" : "lisi",
-      "next" : {
-        "id" : "node_1",
-        "name" : "中继节点：等待大组长和财务审批完毕",
-        "complete" : false,
-        "outTos" : [ {
-          "condition" : { },
-          "userTaskNode" : {
-            "id" : "node_2",
-            "name" : "结束节点",
-            "complete" : false
-          }
-        } ]
-      }
-    }
-  }, {
-    "condition" : { },
-    "userTaskNode" : {
-      "id" : "node_8",
-      "name" : "财务审批",
-      "complete" : false,
-      "assignee" : "rose",
-      "next" : {
-        "id" : "node_1",
-        "name" : "中继节点：等待大组长和财务审批完毕",
-        "complete" : false,
-        "outTos" : [ {
-          "condition" : { },
-          "userTaskNode" : {
-            "id" : "node_2",
-            "name" : "结束节点",
-            "complete" : false
-          }
-        } ]
-      }
-    }
-  } ]
-}
+  "complete" : true
+} , 当前时间： 2024-08-18 14:39:55
 执行日志:>>>>>>>>>流程流出：{
   "id" : "node_8",
   "name" : "财务审批",
   "complete" : true,
-  "assignee" : "rose",
-  "next" : {
-    "id" : "node_1",
-    "name" : "中继节点：等待大组长和财务审批完毕",
-    "complete" : false,
-    "outTos" : [ {
-      "condition" : { },
-      "userTaskNode" : {
-        "id" : "node_2",
-        "name" : "结束节点",
-        "complete" : false
-      }
-    } ]
-  }
-}
+  "assignee" : "rose"
+} , 当前时间： 2024-08-18 14:40:00
 执行日志:>>>>>>>>>流程进入：{
   "id" : "node_1",
   "name" : "中继节点：等待大组长和财务审批完毕",
-  "complete" : false,
-  "outTos" : [ {
-    "condition" : { },
-    "userTaskNode" : {
-      "id" : "node_2",
-      "name" : "结束节点",
-      "complete" : false
-    }
-  } ]
-}, 上一个节点：{
+  "complete" : false
+} , 上一个节点：{
   "id" : "node_8",
   "name" : "财务审批",
   "complete" : true,
-  "assignee" : "rose",
-  "next" : {
-    "id" : "node_1",
-    "name" : "中继节点：等待大组长和财务审批完毕",
-    "complete" : false,
-    "outTos" : [ {
-      "condition" : { },
-      "userTaskNode" : {
-        "id" : "node_2",
-        "name" : "结束节点",
-        "complete" : false
-      }
-    } ]
-  }
-}
+  "assignee" : "rose"
+} , 当前时间： 2024-08-18 14:40:00
 执行日志:>>>>>>>>>流程流出：{
   "id" : "node_1",
   "name" : "中继节点：等待大组长和财务审批完毕",
-  "complete" : true,
-  "outTos" : [ {
-    "condition" : { },
-    "userTaskNode" : {
-      "id" : "node_2",
-      "name" : "结束节点",
-      "complete" : false
-    }
-  } ]
-}
+  "complete" : true
+} , 当前时间： 2024-08-18 14:40:00
 执行日志:>>>>>>>>>流程进入：{
   "id" : "node_2",
   "name" : "结束节点",
   "complete" : false
-}, 上一个节点：{
+} , 上一个节点：{
   "id" : "node_1",
   "name" : "中继节点：等待大组长和财务审批完毕",
-  "complete" : true,
-  "outTos" : [ {
-    "condition" : { },
-    "userTaskNode" : {
-      "id" : "node_2",
-      "name" : "结束节点",
-      "complete" : false
-    }
-  } ]
-}
+  "complete" : true
+} , 当前时间： 2024-08-18 14:40:00
 执行日志:>>>>>>>>>流程即将结束：{
   "finished" : false,
   "variables" : {
@@ -1019,10 +341,10 @@ wbpm核心概念：
     "complete" : false
   } ],
   "finishedListener" : [ { }, { } ]
-}
+} , 当前时间： 2024-08-18 14:40:00
 执行日志:>>>>>>>>>流程流出：{
   "id" : "node_2",
   "name" : "结束节点",
   "complete" : true
-}
+} , 当前时间： 2024-08-18 14:40:00
 ```

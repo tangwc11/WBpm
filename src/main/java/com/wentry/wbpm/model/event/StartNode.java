@@ -16,7 +16,7 @@ public class StartNode extends AutoFinishedWBpmNode {
     private WBpmNode next;
 
     public StartNode(String name) {
-        super(name,Filters.defaultFilters);
+        super(name,Filters.DEFAULT_FILTERS);
     }
 
     public <T extends WBpmNode> StartNode next(T userTaskNode) {
